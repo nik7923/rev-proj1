@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ccc;
+        font-family: cursive;
+        font-size:17px;
+
+
+      }
+      .wrapper{
+          background-color: #fff;
+          width: 500px;
+          padding: 40px;
+          margin: auto;
+          margin-top: 100px;
+          border-radius: 40px;
+          font-family: cursive;
+        font-size:15px;
+      }
+      input[type="text"],input[type="password"]{
+          width: 100%;
+          padding: 11px;
+          font-size:18px;
+          box-sizing: border-box;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+      }
+      .btn{
+          margin-top:12px;
+          padding: 11px;
+          background-color: rgb(151, 168, 190);
+          border: none;
+          color: #fff;
+          font-size: 18px;
+          border-radius: 4px;
+      }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1 style="text-align:center; font-family:'Times New Roman', Times, serif; margin-top:-10px;">Create account</h1>
+    <form action="acccreateservlet" method="post">
+        <table style="border-spacing: 40px 0px;">
+            <tr>
+                <th>
+                    <div><p>Login details:</p>
+                        <input placeholder="Set username" type="text" name="username">
+                        <br>
+                        <br>
+                        <input placeholder="Set password" type="text" name="password">
+                    </div>
+                <th>
+                    <p>Name: </p><input type="text" name="name">
+                    <p>Email: </p><input type="text" name="email">
+                    <p></p><input type="radio" name="gender" checked="true" id="gendermale" value="Male"><label for="gendermale">Male</label>
+                    <input type="radio" name="gender" id="genderfemale" value="Female"><label for="genderfemale">Female</label></p>
+                    <p>Country: <input type="text" name="country" id=""></p>
+                </th>
+            </tr>
+        </table>
+    <div style="text-align:center"><input class="btn" type="submit" value="Submit"></div>
+    </form>
+</div>
+</body>
+
+<script>
+      function getCookie() {
+      let user = document.cookie.split("; ");
+      console.log(user)
+      for(i=0;i<user.length;i++) {
+          v = user[i].split('=');
+          if (v[0] == "manager" || "username") {
+            return v[1]
+            }
+        }
+    }
+
+    function checkCookie(a=getCookie()) {
+          if (a=="manager") {
+            alert("You are already logged in as manager")
+            location.href = "manhome.html"
+            }
+            else if (a != null){
+            alert("You are already logged in as employee")
+            location.href = "employeehome.html"
+             }
+
+    }
+    checkCookie()
+    </script>
+
+</html>
+
+

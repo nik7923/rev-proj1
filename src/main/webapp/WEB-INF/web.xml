@@ -1,0 +1,118 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>proj.loginservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logoutservlet</servlet-name>
+    <servlet-class>proj.logoutservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logoutservlet</servlet-name>
+    <url-pattern>/logoutservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateservlet</servlet-name>
+    <servlet-class>proj.updateservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updateservlet</servlet-name>
+    <url-pattern>/updateservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>viewservlet</servlet-name>
+    <servlet-class>proj.viewservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>viewservlet</servlet-name>
+    <url-pattern>/viewservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updatestatusservlet</servlet-name>
+    <servlet-class>proj.updatestatusservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updatestatusservlet</servlet-name>
+    <url-pattern>/updatestatusservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>viewstatusservlet</servlet-name>
+    <servlet-class>proj.viewstatusservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>viewstatusservlet</servlet-name>
+    <url-pattern>/viewstatusservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>managerviewallpendingservlet</servlet-name>
+    <servlet-class>proj.managerviewallpendingservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>managerviewallpendingservlet</servlet-name>
+    <url-pattern>/managerviewallpendingservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>managerapordservlet</servlet-name>
+    <servlet-class>proj.managerapordservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>managerapordservlet</servlet-name>
+    <url-pattern>/managerapordservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>manreqvieweachservlet</servlet-name>
+    <servlet-class>proj.manreqvieweachservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>manreqvieweachservlet</servlet-name>
+    <url-pattern>/manreqvieweachservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>manviewallempinfoservlet</servlet-name>
+    <servlet-class>proj.manviewallempinfoservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>manviewallempinfoservlet</servlet-name>
+    <url-pattern>/manviewallempinfoservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>acccreateservlet</servlet-name>
+    <servlet-class>proj.acccreateservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>acccreateservlet</servlet-name>
+    <url-pattern>/acccreateservlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

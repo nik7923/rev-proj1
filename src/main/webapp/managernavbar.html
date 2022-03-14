@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    body {
+        background-color: #C1E3FD;
+    }
+    .navbar {
+        list-style: none;
+        background-color: bisque;
+        width: 1200px;
+        height: 100px;
+        box-sizing: border-box;
+        left: 50%;
+        transform: translateX(-50%);
+        position:fixed;
+        bottom: -5px;
+        border-radius: 20px;
+        margin-top: 30px;
+        padding-bottom:5px;
+        font-family: fantasy;
+    }
+    #navlist {
+        display: inline-block;
+        vertical-align: top;
+
+    }
+    .nav {
+        padding-top:34px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: lightslategray;
+        font-weight: 500;
+        padding-left: 110px;
+
+    }
+    a:hover {
+        color: #000;
+        font-size: 26px;
+        padding-left: 100px;
+    }
+
+</style>
+
+</head>
+<body>
+<ul class = "navbar">
+    <li id="navlist" class="nav"><a href="manhome.html">Home</a></li>
+    <li id="navlist" class="nav"><a href="logoutservlet">Logout</a></li>
+    <li id="navlist" ><a style="display:table; padding-top: 21px" href="managerviewallpendingservlet">View all <br> requests</a></li>
+    <li id="navlist" ><a style="display:table; padding-top:21px" href="manvieweachreq.html">Search request <br> by employee</a></li>
+    <li id="navlist"><a style="display:table; padding-top:21px" href="manviewallempinfoservlet">View all <br> employees<a></li>
+</ul>
+
+</body>
+</html>

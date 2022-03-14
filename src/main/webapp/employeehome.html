@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @import url(//db.onlinewebfonts.com/c/b1b2e2db2eef02d230247a474d1d66a6?family=Chiller);
+
+        body {
+            background-color: #C1E3FD;
+        }
+        .navbar {
+            list-style: none;
+            background-color: bisque;
+            width: 1200px;
+            height: 100px;
+            box-sizing: border-box;
+            left: 50%;
+            transform: translateX(-50%);
+            position:fixed;
+            bottom: -5px;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding-bottom:5px;
+            font-family: fantasy;
+        }
+        #navlist {
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .nav {
+            padding-top:34px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: lightslategray;
+            font-weight: 500;
+            padding-left: 100px;
+
+        }
+        a:hover {
+            color: #000;
+            font-size: 26px;
+            padding-left: 90px;
+        }
+        #div1 {
+            font-family: "Chiller", fantasy;
+            position: relative;
+            margin-top: -500px;
+            margin-left: 900px;
+            font-size: 60px;
+        }
+
+
+    </style>
+</head>
+<body>
+<img style="background-color:transparent; position: relative;" src="images/emp.png" alt="">
+<div id="div1"> Welcome Employee</div>
+<ul class = "navbar">
+    <li id="navlist" class="nav"><a href="employeehome.html">Home</a></li>
+    <li id="navlist" class="nav"><a href="logoutservlet">Logout</a></li>
+    <li id="navlist" ><a style="display:table; padding-top: 5px" href="updatestatusemp.html">Submit a <br> reimbursement <br> request</a></li>
+    <li id="navlist" ><a style="display:table; padding-top:25px" href="viewstatusservlet">View past <br> requests</a></li>
+    <li id="navlist"><a style="display:table; padding-top:25px" href="viewservlet">View personal <br> information<a></li>
+</ul>
+
+<script>
+      function getCookie() {
+      let user = document.cookie.split("; ");
+      console.log(user)
+      for(i=0;i<user.length;i++) {
+          v = user[i].split('=');
+          if (v[0] == "username") {
+            return v[1]
+            }
+        }
+    }
+
+    function checkCookie(a=getCookie()) {
+          if (a==null || a=="") {
+            alert("You are not logged in as an employee")
+            location.href = "index.html"
+      }
+    }
+    checkCookie()
+
+    </script>
+
+</body>
+
+</html>

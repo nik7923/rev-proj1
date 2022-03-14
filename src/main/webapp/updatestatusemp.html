@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #C1E3FD;
+        }
+        .navbar {
+            list-style: none;
+            background-color: bisque;
+            width: 1200px;
+            height: 100px;
+            box-sizing: border-box;
+            left: 50%;
+            transform: translateX(-50%);
+            position:fixed;
+            bottom: -5px;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding-bottom:5px;
+            font-family: fantasy;
+        }
+        #navlist {
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .nav {
+            padding-top:34px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: lightslategray;
+            font-weight: 500;
+            padding-left: 100px;
+
+        }
+        a:hover {
+            color: #000;
+            font-size: 26px;
+            padding-left: 90px;
+        }
+        #div1 {
+            font-family: "Chiller", fantasy;
+            position: relative;
+            margin-top: -500px;
+            margin-left: 900px;
+            font-size: 60px;
+        }
+         .wrapper{
+          background-color: #fff;
+          width: 400px;
+          padding: 40px;
+          margin: auto;
+          margin-top: 100px;
+          border-radius: 40px;
+          font-family: cursive;
+          font-size: 15px;
+      }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <form action="updatestatusservlet" method="post">
+        <div>
+            <label for="">Please enter the amount of money you are requesting</label><br> <br>
+            <input style="margin-left:100px;" type="number" name="amount" id="">
+        </div> <br>
+        <div><input style="margin-left:156px;" type="submit" value="Submit"></div>
+</form>
+</div>
+
+<ul class = "navbar">
+    <li id="navlist" class="nav"><a href="employeehome.html">Home</a></li>
+    <li id="navlist" class="nav"><a href="logoutservlet">Logout</a></li>
+    <li id="navlist" ><a style="display:table; padding-top: 5px" href="updatestatusemp.html">Submit a <br> reimbursement <br> request</a></li>
+    <li id="navlist" ><a style="display:table; padding-top:25px" href="viewstatusservlet">View past <br> requests</a></li>
+    <li id="navlist"><a style="display:table; padding-top:25px" href="viewservlet">View personal <br> information<a></li>
+</ul>
+
+</body>
+
+<script>
+      function getCookie() {
+      let user = document.cookie.split("; ");
+      console.log(user)
+      for(i=0;i<user.length;i++) {
+          v = user[i].split('=');
+          if (v[0] == "username") {
+            return v[1]
+            }
+        }
+    }
+
+    function checkCookie(a=getCookie()) {
+          if (a==null || a=="") {
+            alert("You are not logged in as an employee")
+            location.href = "index.html"
+      }
+    }
+    checkCookie()
+
+    </script>
+
+</html>
