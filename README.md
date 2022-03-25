@@ -19,10 +19,10 @@ The manager has a separate login, and can view a scrollable table of all request
 ## Features
 
 List of features ready and TODOs for future development
-*Manager can automatically approve or deny requests by checking boxes
-*Exact date and timestamp of request is viewable and recorded
-*Hibernate efficiently returns and stores queries in database
-*Website details are customized for user
+* Manager can automatically approve or deny requests by checking boxes
+* Exact date and timestamp of request is viewable and recorded
+* Hibernate efficiently returns and stores queries in database
+* Website details are customized for user
 
 To-do list:
 * Make it so that once a request is approved or denied, there is no more changing it
@@ -43,7 +43,7 @@ To-do list:
 
 ## Usage
 
-*To demonstrate a sample reimbursement transaction and deal with multiple users in a database
+* To demonstrate a sample reimbursement transaction and deal with multiple users in a database
 
 
 ## License
