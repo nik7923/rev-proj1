@@ -48,4 +48,4 @@ To-do list:
 
 ## License
 
-This project uses the following license: [<MIT license>](<LICENSE>).
+This project uses the following license: [MIT license](LICENSE).
