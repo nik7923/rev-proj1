@@ -8,13 +8,13 @@ The manager has a separate login, and can view a scrollable table of all request
 
 ## Technologies Used
 
-*Java version 11
-*Servlets
-*Html/CSS version 5
-*Javascript 
-*Maven
-*Hibernate version 6
-*TomCat version 10
+* Java version 11
+* Servlets
+* Html/CSS version 5
+* Javascript 
+* Maven
+* Hibernate version 6
+* TomCat version 10
 
 ## Features
 
@@ -25,9 +25,9 @@ List of features ready and TODOs for future development
 *Website details are customized for user
 
 To-do list:
-*Make it so that once a request is approved or denied, there is no more changing it
-*Move navbar to the top or side of page
-*Have employee information visible when updating it
+* Make it so that once a request is approved or denied, there is no more changing it
+* Move navbar to the top or side of page
+* Have employee information visible when updating it
 
 ## Getting Started
    
@@ -37,9 +37,9 @@ To-do list:
 > Be sure to include BOTH Windows and Unix command  
 > Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
 
-*Run this project on intellij
-*Configure the pom.xml file and webapp and make sure the name of the database is the same as the one you are using
-*Lastly, some of the images in the folder were ignored, so feel free to update the project with custom images when using them in the html page
+* Run this project on intellij
+* Configure the pom.xml file and webapp and make sure the name of the database is the same as the one you are using
+* Lastly, some of the images in the folder were ignored, so feel free to update the project with custom images when using them in the html page
 
 ## Usage
 
