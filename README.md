@@ -1,5 +1,5 @@
 # rev-proj1
-# PROJECT NAME
+# Reimbursement project
 
 ## Project Description
 
